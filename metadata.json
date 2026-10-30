@@ -1,0 +1,6 @@
+{
+  "name": "Eco Hero: Race to Restore",
+  "description": "An action-packed 3D endless runner and environmental restoration game where players race through polluted streets, dodge hazards, solve emergency eco-challenges, and rebuild a thriving green metropolis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

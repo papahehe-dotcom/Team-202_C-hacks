@@ -1,0 +1,642 @@
+MASTER PROMPT FOR GOOGLE AI STUDIO: BUILD A REAL ENVIRONMENTAL STRATEGY GAME
+
+Build a fully playable, polished, interactive environmental strategy game called EARTH SAVERS: THE LAST 8 DAYS.
+
+Do not create a normal website, a dashboard-only interface, a presentation, or a collection of static cards. Create an actual game with a game world, a level-selection screen, animated events, interactive choices, currency management, sound effects, voice dialogue, rewards, progression, and win/lose conditions.
+
+The game should feel like a genuine city-building and survival strategy game, with a visual quality inspired by polished simulation and management games.
+
+1. GAME CONCEPT
+
+The player becomes the temporary environmental leader of a fictional land called Verdantia.
+
+Verdantia is facing three interconnected environmental crises:
+
+* An extreme heatwave that threatens citizens.
+* Rising air pollution caused by traffic, industries, and other activities.
+* An electricity shortage that threatens homes, hospitals, businesses, and essential services.
+
+The player has a limited amount of money and a limited number of days to save the land.
+
+Every decision must have consequences. Some actions will solve immediate problems but create new challenges. Other actions will cost more initially but produce long-term benefits.
+
+The objective is to save as many citizens as possible, stabilise the electricity supply, reduce pollution, improve environmental conditions, and manage money wisely.
+
+The game must teach players how to prioritise urgent needs, budget limited resources, plan ahead, and understand the relationship between environmental decisions.
+
+2. GAME INTERFACE AND VISUAL DESIGN
+
+The game must have a genuine gaming interface rather than a typical website layout.
+
+Use React and TypeScript, or the appropriate supported framework, to implement the complete game. Use CSS animations, SVG, Canvas, or other suitable techniques to create an interactive game environment.
+
+Main visual requirements
+
+* Create an immersive, colourful, semi-isometric 2D city map with roads, buildings, homes, hospitals, factories, parks, trees, vehicles, power stations, and citizens.
+* Show visible environmental conditions. For example, extreme heat should create a hot orange atmosphere, pollution should make the sky hazy, and electricity shortages should cause buildings to lose their lights.
+* As the player improves the city, make the world visibly greener, cleaner, safer, and more stable.
+* Add animated citizens, moving vehicles, clouds, the sun, electricity indicators, pollution effects, and other environmental details wherever practical.
+* Use a polished game HUD with readable icons, animated counters, progress bars, action buttons, a minimap or city overview, and a visible day counter.
+* Add transitions between screens, satisfying button animations, hover and click effects, notification pop-ups, reward animations, and screen transitions.
+* Use a consistent visual identity, attractive typography, and a modern game colour palette.
+* Make the interface responsive on desktop, tablet, and mobile screens.
+
+Do not use a plain white background with a few cards. The city itself should be a major visual feature of the game.
+
+3. START SCREEN
+
+Create an animated title screen displaying:
+
+EARTH SAVERS: THE LAST 8 DAYS
+
+Subtitle: “Every decision changes the future.”
+
+Show an animated view of Verdantia in crisis, with heatwaves, polluted skies, and parts of the city experiencing power shortages.
+
+Include these working buttons:
+
+* PLAY GAME
+* HOW TO PLAY
+* SOUND SETTINGS
+* ABOUT THE GAME
+
+The PLAY GAME button should lead to the game introduction and level-selection screen.
+
+The HOW TO PLAY button should open a simple, readable tutorial.
+
+4. INTRODUCTION AND STORY
+
+Introduce the game through a short animated scene.
+
+Narration:
+
+“Welcome to Verdantia! Once a thriving, beautiful land, our city is now facing an environmental crisis. Temperatures are rising, the air is becoming polluted, and our electricity supply is running dangerously low. The citizens need your help. You have eight days, a limited budget, and some difficult decisions to make. Can you save Verdantia before it is too late?”
+
+Display the environmental character Earthy, who will guide and evaluate the player throughout the game.
+
+Earthy should be a friendly, expressive, animated environmental guardian. Give Earthy a distinctive appearance, such as a small green-and-blue planet character with expressive eyes, animated facial expressions, and a friendly personality.
+
+Earthy must be a recurring character, not merely a logo.
+
+5. HOW TO PLAY: SIMPLE INSTRUCTIONS
+
+Before starting Day 1, show a short tutorial in simple language.
+
+Explain the rules as follows:
+
+What is CC?
+
+CC means City Credits. These are the virtual coins you use to improve Verdantia. They are not real money.
+
+Your starting money
+
+You begin with 1,500 CC.
+
+How do you earn more money?
+
+At the beginning of every new day, you receive 50 additional CC. At the end of each day, Earthy evaluates your decisions and awards bonus CC based on your environmental performance.
+
+How do you play?
+
+1. Open the current day’s crisis.
+2. Read what has happened and what needs attention.
+3. Choose interventions by clicking their buttons.
+4. Check the price before purchasing anything.
+5. Watch how your choices affect the city.
+6. Complete the day and receive Earth’s evaluation from Earthy.
+7. Collect your reward and move to the next day.
+
+Important rules
+
+* You cannot spend more CC than you have.
+* Different actions cost different amounts.
+* You can make multiple purchases in one day, provided you have enough money and the action limits allow them.
+* Every action affects one or more city indicators.
+* Some actions provide immediate relief, while others take time to produce benefits.
+* You must decide what is most important instead of trying to purchase everything.
+* Your choices affect the crises you face on subsequent days.
+
+Explain the rules using short sentences, friendly icons, and optional voice narration. Do not overwhelm the player with long paragraphs.
+
+Include a working NEXT button and a SKIP TUTORIAL button.
+
+6. LEVEL SELECTION: EIGHT DAYS
+
+Create a proper game level-selection screen.
+
+Display eight visually distinct level tiles connected by a road or progression path:
+
+DAY 1 — The City Is Burning
+DAY 2 — Power on the Brink
+DAY 3 — The Pollution Surge
+DAY 4 — A City Without Shade
+DAY 5 — The Energy Dilemma
+DAY 6 — The Citizens Need You
+DAY 7 — The Final Environmental Challenge
+DAY 8 — Save Verdantia
+
+Initially, only Day 1 should be unlocked.
+
+After successfully completing a day, unlock the next day. Previously completed days should be replayable without erasing the player’s main campaign progress.
+
+Each tile should show its day number, title, completion status, and a small illustration of its crisis.
+
+Locked levels must have a visible lock icon. Completed levels must have a checkmark or achievement badge.
+
+Clicking an unlocked level must open a separate, immersive gameplay screen for that day. Do not simply replace the title on the same static dashboard.
+
+7. THE GAMEPLAY SCREEN
+
+When the player opens a day, show the city map and its current crisis.
+
+The gameplay interface must contain:
+
+Top HUD
+
+* Current day and level title.
+* Remaining City Credits (CC).
+* Citizen Safety.
+* Energy Stability.
+* Air Quality.
+* Environmental Health.
+* Public Well-being.
+
+Main game area
+
+* Large, interactive city map.
+* Visible buildings and environmental conditions.
+* Earthy’s animated character and dialogue bubble.
+* Crisis notifications and event animations.
+
+Action panel
+
+* A collection of clickable intervention buttons.
+* The cost of each action.
+* A brief description of its effects.
+* Clear indicators showing which indicators may improve or worsen.
+* Disabled purchase buttons when the player cannot afford an action.
+
+Bottom controls
+
+* END DAY.
+* VIEW CITY STATUS.
+* VIEW ACTION HISTORY.
+* SOUND ON/OFF.
+
+The player must be able to see their remaining money at all times.
+
+Every button must work. Do not create decorative buttons that have no functionality.
+
+8. CURRENCY AND ECONOMY
+
+Use City Credits (CC) as the game’s currency.
+
+Starting balance: 1,500 CC on Day 1.
+
+At the beginning of each subsequent day, add 50 CC to the player’s remaining balance.
+
+Earthy then awards additional bonus CC at the end of each day, depending on the player’s performance.
+
+Suggested reward system:
+
+* 90–100 environmental score: 150 bonus CC.
+* 75–89 environmental score: 100 bonus CC.
+* 50–74 environmental score: 60 bonus CC.
+* Below 50: 20 bonus CC.
+
+Add the daily allowance and the previous day’s bonus to the remaining balance. Never reset the player’s money to 1,500 CC after Day 1.
+
+Show a clear animated notification whenever money is earned or spent.
+
+For example:
+
+“+50 CC — Daily allowance received!”
+
+“+100 CC — Earthy rewards your environmental leadership!”
+
+“−150 CC — Investment completed.”
+
+If the player cannot afford an intervention, show a message such as:
+
+“Not enough CC! Try a more affordable solution or save your money for the next day.”
+
+Allow players to make multiple purchases in one day, subject to available funds and any action-specific restrictions.
+
+9. INTERVENTIONS AND PRICES
+
+Implement a balanced set of interventions with meaningful trade-offs.
+
+Use the following initial prices. Adjust the game mechanics through testing if necessary, but preserve the basic idea that some solutions are inexpensive and immediate, while others require substantial investment.
+
+* Plant urban trees: 100 CC.
+* Open a cooling centre: 150 CC.
+* Provide emergency drinking-water stations: 80 CC.
+* Expand air-conditioning access in essential public facilities: 180 CC.
+* Install a solar-energy unit: 300 CC.
+* Improve building energy efficiency: 180 CC.
+* Improve public transport: 200 CC.
+* Introduce industrial pollution controls: 180 CC.
+* Upgrade the electricity distribution network: 250 CC.
+* Establish community awareness campaigns: 60 CC.
+* Create urban green spaces: 200 CC.
+* Improve waste collection and segregation: 120 CC.
+* Repair inefficient public lighting: 100 CC.
+* Establish emergency backup power for essential services: 250 CC.
+
+The effects of these interventions must be implemented in the game engine, not merely described in text.
+
+Examples of possible effects:
+
+Plant urban trees
+
+* Gradually improves environmental health.
+* Helps reduce the city’s heat burden over subsequent days.
+* Costs money immediately.
+
+Open a cooling centre
+
+* Improves citizen safety immediately.
+* Increases electricity demand.
+* Becomes more effective when the city has reliable electricity.
+
+Install solar energy
+
+* Costs a substantial amount of money.
+* Improves energy stability over time.
+* Reduces reliance on polluting energy generation.
+
+Improve public transport
+
+* Reduces traffic-related pollution over time.
+* Costs money upfront.
+* Provides greater benefits when sustained over multiple days.
+
+Improve building energy efficiency
+
+* Reduces electricity demand.
+* Helps prevent blackouts.
+* Makes cooling centres and other essential services easier to operate.
+
+Industrial pollution controls
+
+* Improve air quality over time.
+* May require maintenance or further investment.
+
+Emergency backup power
+
+* Protects essential services during electricity shortages.
+* Costs money and should not eliminate the need for long-term energy planning.
+
+The game must reward strategic combinations of interventions, not simply the number of buttons pressed.
+
+10. DAILY CRISES AND EVENTS
+
+Every day must introduce a new crisis, a new development, or a more difficult version of an existing problem.
+
+Create the following eight scenarios.
+
+DAY 1 — THE CITY IS BURNING
+
+Earthy’s opening dialogue:
+
+“Oh no! Verdantia is experiencing an extreme heatwave. The hospitals are crowded, citizens are struggling with the heat, and the electricity supply is already under pressure. You have 1,500 CC to begin with. What will you prioritise?”
+
+Show a hot, orange city with a blazing sun, heat distortion, and citizens seeking shade.
+
+The player must decide how to balance immediate heat protection with long-term environmental improvements.
+
+Possible choices include cooling centres, drinking-water stations, trees, solar energy, and energy efficiency.
+
+The choices made on Day 1 must affect later days.
+
+DAY 2 — POWER ON THE BRINK
+
+Earthy’s dialogue:
+
+“The heatwave continues, and electricity demand has increased. Homes, hospitals, and businesses need reliable power. If we are not careful, the entire city could face a blackout!”
+
+Show flickering lights and a warning indicator for electricity stability.
+
+The player must choose between immediate emergency support and longer-term electricity solutions.
+
+DAY 3 — THE POLLUTION SURGE
+
+Earthy’s dialogue:
+
+“The air quality has become dangerous! Traffic and industrial emissions are making the situation worse. We need cleaner air, but remember: every solution has a cost.”
+
+Show hazy skies, traffic congestion, and an air-quality warning.
+
+The player must decide whether to invest in pollution controls, public transport, green spaces, or other interventions.
+
+DAY 4 — A CITY WITHOUT SHADE
+
+Earthy’s dialogue:
+
+“The city is getting hotter, and the lack of green spaces is making life harder for our citizens. Trees cannot solve everything overnight, but our future depends on the choices we make today.”
+
+Show areas of the city with little greenery alongside any parks the player has already created.
+
+The player must balance immediate citizen protection with investments whose benefits develop over time.
+
+DAY 5 — THE ENERGY DILEMMA
+
+Earthy’s dialogue:
+
+“We have a difficult choice! More cooling could protect citizens, but it could also increase electricity demand. Can you provide relief without putting the power supply at risk?”
+
+Create a decision event in which the player must consider cooling demand, energy efficiency, and clean energy together.
+
+Do not force a single correct answer. Different strategies should be viable if they are planned well.
+
+DAY 6 — THE CITIZENS NEED YOU
+
+Earthy’s dialogue:
+
+“Some neighbourhoods are struggling more than others. Hospitals need power, citizens need clean air, and essential services must continue working. Your resources are limited, so think carefully about who needs help most urgently.”
+
+Show hospitals, residential areas, and essential services on the map.
+
+The player should prioritise essential services and public well-being while protecting the city’s overall stability.
+
+DAY 7 — THE FINAL ENVIRONMENTAL CHALLENGE
+
+Earthy’s dialogue:
+
+“We are getting closer to the finish line, but the city is still vulnerable. A new environmental setback has appeared! Use your remaining resources wisely.”
+
+Trigger a new event based on the player’s current city conditions. For example, a city with weak energy stability may face a greater blackout risk, while a city with poor air quality may experience a more severe pollution event.
+
+Make this day test whether the player has planned ahead.
+
+DAY 8 — SAVE VERDANTIA
+
+Earthy’s dialogue:
+
+“This is it! Our final day. Verdantia’s future depends on the decisions you have made and the choices you make now. Can you bring the city through this crisis?”
+
+Show a dramatic final city scene.
+
+Allow the player to use remaining funds for their final interventions. Then evaluate the entire campaign, including the cumulative effects of earlier decisions.
+
+The final outcome must depend on the player’s actual gameplay state rather than a random result or a predetermined ending.
+
+11. EARTHY: THE ENVIRONMENTAL JUDGE
+
+Earthy is a central character who appears throughout the game.
+
+Give Earthy animated facial expressions, speech bubbles, and appropriate voice narration.
+
+Earthy should react to the player’s actual decisions.
+
+Examples:
+
+After effective decisions:
+
+“Wow! That was a smart move. You protected citizens and strengthened the city’s future!”
+
+After a poor decision:
+
+“Hmm… that helped us in one way, but it also created another problem. What could we do differently tomorrow?”
+
+After careful budgeting:
+
+“Excellent planning! You saved enough CC to prepare for the next challenge.”
+
+After an electricity-related mistake:
+
+“Oh no! We increased cooling, but our electricity supply is struggling. We need to balance comfort with energy demand.”
+
+After improving the city:
+
+“Look at Verdantia! The air is cleaner, our green spaces are growing, and our citizens are safer. Keep going!”
+
+Earthy’s dialogue must be contextual. Do not display the same generic congratulatory message after every action.
+
+Daily environmental judgement
+
+At the end of every day, Earthy must evaluate the player’s performance using a score out of 100.
+
+Base the score on:
+
+* Improvement in citizen safety.
+* Energy stability and electricity demand management.
+* Air-quality improvement.
+* Environmental health.
+* Public well-being.
+* Effective use of available resources.
+* Whether the player avoided critical failures.
+
+Do not award a high score merely because the player spent a lot of money.
+
+Display a special animated evaluation screen with:
+
+* Earthy’s character.
+* Daily environmental score.
+* A performance title, such as “Eco Rookie”, “Green Guardian”, “Planet Protector”, or “Earth Champion”.
+* Indicators showing what improved and what worsened.
+* Money spent and money remaining.
+* The bonus CC awarded.
+* Achievements earned.
+* A working CONTINUE TO NEXT DAY button.
+
+Earthy’s judgement must be based on the real game state.
+
+12. VOICE, SOUND EFFECTS, AND MUSIC
+
+Audio is an important feature. Implement it rather than merely adding a sound-settings button.
+
+Use suitable browser-supported text-to-speech for Earthy’s spoken dialogue, with a friendly, expressive voice where available.
+
+Read important dialogue aloud when it appears, including:
+
+* The opening story.
+* The daily crisis introduction.
+* Important event notifications.
+* Earthy’s end-of-day evaluation.
+* Final victory or failure messages.
+
+Provide subtitles alongside spoken dialogue.
+
+Add appropriate sound effects:
+
+* Soft futuristic ambience in the background.
+* A gentle click sound when selecting actions.
+* A coin sound when spending or earning CC.
+* A warning tone when a crisis becomes critical.
+* A subtle success sound when completing a day.
+* A reward sound when receiving bonus CC.
+* A dramatic but family-friendly sound for major environmental events.
+* A celebratory sound for a successful ending.
+
+Use original, synthesised, or appropriately licensed sounds. Do not depend on missing external audio files.
+
+Include separate controls for:
+
+* Music volume.
+* Sound-effects volume.
+* Voice narration on/off.
+* Master mute.
+
+Audio must never prevent the player from interacting with the game. Handle browser autoplay restrictions by starting audio only after the player interacts with the interface.
+
+13. ACTION FEEDBACK AND ANIMATIONS
+
+Whenever the player purchases an intervention, the city must react visibly.
+
+Examples:
+
+* Trees appear in the selected area.
+* Cooling centres become visible on the map.
+* Solar panels appear on suitable buildings.
+* Streetlights become brighter after energy improvements.
+* Traffic visibly decreases after public transport improvements.
+* The sky gradually becomes clearer as pollution improves.
+* Building lights flicker when electricity stability becomes critical.
+
+Display a short message explaining the impact of each action.
+
+For example:
+
+“Solar energy installed! Energy stability has improved, and the city is better prepared for future demand.”
+
+Or:
+
+“Cooling centre opened! Citizen safety has improved, but electricity demand has increased.”
+
+The exact numerical effects must match the game engine.
+
+Add an action history so players can review their previous decisions.
+
+14. ACHIEVEMENTS, STREAKS, AND REWARDS
+
+Create a working achievement system.
+
+Possible achievements include:
+
+* Smart Spender: Finish a day with at least 200 CC remaining.
+* Clean Air Champion: Achieve a significant improvement in air quality.
+* Power Protector: Maintain strong energy stability.
+* Green Fingers: Invest in urban trees and green spaces.
+* Citizen First: Improve citizen safety during a heatwave.
+* Strategic Planner: Combine interventions to address multiple connected problems.
+* Consistent Guardian: Earn a strong environmental score on consecutive days.
+
+Track achievements across the campaign and show progress towards unlocking them.
+
+A streak should reward consistent environmental performance, not just logging in.
+
+Make rewards visually satisfying through animations, badges, sound effects, and clear notifications.
+
+15. WINNING AND LOSING
+
+At the end of Day 8, calculate a final campaign result.
+
+Possible endings:
+
+GREEN RECOVERY
+The city has become safer, electricity is stable, and environmental conditions have improved substantially.
+
+SURVIVED, BUT STILL STRUGGLING
+The city has avoided complete disaster, but some problems remain unresolved.
+
+ELECTRICITY BLACKOUT
+Energy stability has fallen below a critical threshold, and essential services are severely affected.
+
+CLIMATE EMERGENCY
+Multiple critical indicators have deteriorated, leaving the city unable to adequately protect its citizens.
+
+The ending must be determined by the player’s accumulated results. Use transparent thresholds and meaningful consequences.
+
+If the player loses, allow a replay without making the experience unnecessarily punishing.
+
+After completing the campaign, show:
+
+* Final environmental score.
+* Final city statistics.
+* Total CC earned and spent.
+* Achievements unlocked.
+* Best-performing decisions.
+* Decisions that created problems.
+* A concise explanation of what the player could improve in a replay.
+* A working PLAY AGAIN button.
+
+16. GAME ENGINE AND FUNCTIONAL REQUIREMENTS
+
+This section is essential.
+
+Implement the game as a functioning application, not a mock-up.
+
+Use a central game-state system to track:
+
+* Current day and unlocked levels.
+* Current and previous CC balance.
+* City indicators.
+* Electricity demand and supply.
+* Environmental interventions already purchased.
+* Delayed effects from earlier investments.
+* Daily and cumulative environmental scores.
+* Achievements and streaks.
+* Event history.
+* Audio preferences.
+* Victory and failure conditions.
+
+Use a consistent game-state model so that the interface, score calculations, and Earthy’s dialogue all respond to the same underlying state.
+
+All actions must have real effects. Purchasing an intervention must deduct the correct amount of CC, update the relevant indicators, and trigger appropriate feedback.
+
+Implement safeguards against:
+
+* Spending more money than the player has.
+* Accidentally charging twice for a single purchase.
+* Awarding the same daily bonus repeatedly.
+* Unlocking future levels before the required progression.
+* Duplicating achievements.
+* Allowing invalid indicator values outside the 0–100 range.
+
+Use predictable, testable game rules. Random events may add variety, but they must not override the consequences of the player’s decisions.
+
+Save campaign progress and settings locally where supported, so refreshing the page does not automatically erase the player’s progress. Provide a RESET GAME option with confirmation.
+
+Do not require an API key for the core game mechanics. The game should work without a paid service or an external AI model. Use local game logic for Earthy’s contextual responses and browser-supported speech synthesis for voice narration.
+
+Do not leave placeholder buttons, unfinished levels, fake purchase actions, or non-functional reward screens.
+
+17. BALANCING AND TESTING
+
+Ensure the game is challenging but fair.
+
+The player must not be able to win simply by purchasing the cheapest intervention repeatedly. Similarly, no single expensive intervention should solve every crisis.
+
+Balance the effects of actions so that:
+
+* Immediate relief is valuable during emergencies.
+* Preventive investment is valuable over multiple days.
+* Electricity demand and supply remain interconnected.
+* Pollution reduction takes realistic time within the game’s simplified model.
+* Citizens’ safety and essential services matter throughout the campaign.
+* Careful budgeting creates meaningful advantages.
+* A well-planned combination of affordable actions can outperform a poorly planned expensive purchase.
+
+Test the following scenarios:
+
+1. A player who spends nearly all their CC on Day 1.
+2. A player who saves money but ignores immediate threats.
+3. A player who focuses only on electricity.
+4. A player who focuses only on pollution.
+5. A player who balances emergency relief and long-term investment.
+6. A player who cannot afford an intervention.
+7. A player who refreshes the application during a campaign.
+8. A player who successfully completes all eight days.
+
+Fix gameplay and interface errors before considering the game complete.
+
+18. FINAL DEVELOPMENT INSTRUCTIONS
+
+Build the entire playable experience, including the title screen, tutorial, level-selection screen, all eight daily scenarios, the interactive city, interventions, currency system, Earthy’s contextual dialogue, voice narration, sound effects, rewards, achievements, final evaluation, and replay functionality.
+
+Prioritise real gameplay and a polished visual experience.
+
+The result should feel like a small, finished environmental survival strategy game that a student could demonstrate at a school exhibition or entrepreneurship presentation.
+
+Do not respond with a plan, an explanation, or a design proposal. Build the working game itself.
